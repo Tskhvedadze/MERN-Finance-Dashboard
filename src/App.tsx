@@ -6,7 +6,10 @@ import { createTheme } from '@mui/material/styles'
 import { themeSettings } from './theme'
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { Box } from '@mui/material'
-import NavBar from './components/navbar/NavBar'
+
+import NavBar from '@/components/navbar'
+import DashBoard from '@/view/dashboard'
+import Predictions from '@/view/predictions'
 
 function App() {
     const theme = useMemo(() => createTheme(themeSettings), [])
@@ -23,13 +26,10 @@ function App() {
                     >
                         <NavBar />
                         <Routes>
-                            <Route
-                                path='/'
-                                element={<div>Dashboard page</div>}
-                            />
+                            <Route path='/' element={<DashBoard />} />
                             <Route
                                 path='/predictions'
-                                element={<div>Predictions page</div>}
+                                element={<Predictions />}
                             />
                         </Routes>
                     </Box>

@@ -36,7 +36,7 @@ const NavBar = (props: Props) => {
                             textDecoration: 'inherit',
                         }}
                     >
-                        dashboard
+                        DASHBOARD
                     </Link>
                 </Box>
                 <Box sx={{ '&:hover': { color: palette.primary[100] } }}>
@@ -51,7 +51,7 @@ const NavBar = (props: Props) => {
                             textDecoration: 'inherit',
                         }}
                     >
-                        predictions
+                        PREDICTIONS
                     </Link>
                 </Box>
             </FlexBetween>
